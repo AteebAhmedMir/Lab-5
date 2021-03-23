@@ -1,0 +1,47 @@
+public class Distance {
+    private int feet;
+    private int inches;
+
+Distance(){
+
+    feet = 1;
+
+    inches = 1;
+
+}
+
+Distance(int feet, int inches){
+
+    this.feet = feet;
+
+    this.inches = inches;
+
+}
+
+public int get_feet(){
+
+    return feet;
+
+}
+
+public int get_inches(){
+
+    return inches;
+
+}
+
+public Distance adder(Distance obj1){
+
+    Distance new_obj = new Distance(feet+obj1.feet, inches+obj1.inches);
+
+    return new_obj;
+
+}
+
+public void display(){
+
+    System.out.println("Feet is " + feet + "and Inches are " + inches );
+
+}
+
+}

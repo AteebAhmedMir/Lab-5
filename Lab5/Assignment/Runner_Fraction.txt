@@ -1,0 +1,25 @@
+
+public class Runner_Fraction {
+    public static void main(String[] args) {
+
+Fraction first_fraction = new Fraction(32, 12);
+
+Fraction second_refractor = new Fraction();
+
+first_fraction.display();
+
+second_refractor.display();
+
+if (Fraction.equals(first_fraction, second_refractor))
+
+System.out.println("Both the ratios are equal");
+
+else
+
+System.out.println("There is a difference in the ratios.");
+
+}
+
+}
+    
+

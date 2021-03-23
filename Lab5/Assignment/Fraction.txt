@@ -1,0 +1,61 @@
+
+public class Fraction {
+    private int i1;
+
+private int i2;
+
+private double ratio;
+
+Fraction(){
+
+i1 = 1;
+
+i2 = 1;
+
+ratio = i1/i2;
+
+}
+
+Fraction(int x, int y){
+
+i1 = x;
+
+i2 = y;
+
+ratio = i1/i2;
+
+}
+
+public void setRatio(double ratio){
+
+this.ratio = ratio;
+
+}
+
+public double getRatio(){
+
+return ratio;
+
+}
+
+public static boolean equals(Fraction a, Fraction b){
+
+if(b.ratio == a.ratio)
+
+return true;
+
+else
+
+return false;
+
+}
+
+public void display(){
+
+System.out.println("First Integer :" +  i1 + "Second Integer:" + i2 + "Ratio of the two integers:" + ratio);
+
+}
+
+}
+    
+

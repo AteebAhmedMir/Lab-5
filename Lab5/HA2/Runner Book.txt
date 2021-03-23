@@ -1,0 +1,43 @@
+
+public class Runner_Book {
+    public static void main(String[] args) {
+
+Book b1 = new Book();
+
+String[] chapterName_b = {"Black Beauty", "Chronicles of narnia", "Skelig", "Harry Potter nad the half blood prince", "Lord of the Rings", "Wimpy kids Diary", "The deathly Hallows p.1", "The deathly Hallows p.2", "Flight", "The new aroma", "To kill a mockingbird", "Frankestein", "Love and War"};
+
+Book b2 = new Book("Rowling", chapterName_b);
+
+b1.setAuthor("J. R. R. Tolkien");
+
+if(Book.compareAuthors(b1, b2))
+
+System.out.println("Both the books have the same authors");
+
+else
+
+System.out.println("Both book have unique authors");
+
+Book b3 = Book.compareChapterNames(b1, b2);
+
+System.out.println("Book 1: Author: " + b1.getAuthor() + "Chapters:");
+
+for(int i = 0; i<b1.getChapterNames().length; i++){
+
+System.out.println(b1.getChapterNames()[i]);
+
+}
+
+System.out.println("Book 2: Author: " + b2.getAuthor() + "Chapters:");
+
+for(int i = 0; i<b2.getChapterNames().length; i++){
+
+System.out.println(b2.getChapterNames()[i]);
+
+}
+
+}
+
+}
+    
+

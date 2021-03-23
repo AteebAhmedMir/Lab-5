@@ -1,0 +1,18 @@
+public class Runner_Distance {
+    public static void main(String[] args) {
+
+        Distance f_d = new Distance(6, 69);
+
+        Distance s_d = new Distance(4, 3);
+
+        Distance t_d = f_d.adder(f_d);
+
+        f_d.display();
+
+        s_d.display();
+
+        t_d.display();
+        
+    }
+    
+}
